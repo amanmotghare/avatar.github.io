@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Google</title>
+
+		<meta charset="utf-8">
+  		<meta name="viewport" content="width=device-width, initial-scale=1">
+  		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  		<link rel="stylesheet" type="text/css" href="style.css">
+  		<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Birthstone&family=Ephesis&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Birthstone&family=Dancing+Script:wght@700&family=EB+Garamond:ital,wght@1,500&family=Ephesis&family=Varela+Round&display=swap" rel="stylesheet">
+</head>
+<body>
+
+	<nav class="navbar navbar-default text-center">
+		<a  href="#"><h2>Welcome! Let's Find Out Your Avatar.<h2></a>
+	</nav>
+<section>
+	<div class="main text-center bg-dark">
+		<div>
+			<label class="label text-center text-light bg-light"><h3>Enter Your Name Below To Find Your Avatar.</h3></label>
+			<input class=" text-center" type="text" name="" id="nameid" placeholder="Enter Name">
+		</div>
+
+		<div class="imgdiv">
+			<img src="imgs/avatar.jpg" width="400" height="400" id="imgchange">
+		</div>
+
+		<button type="button" class="btn btn-warning btn-lg">Click Me</button>
+
+	</div>
+
+
+
+
+
+</section>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js" integrity="sha512-Pa4Jto+LuCGBHy2/POQEbTh0reuoiEXQWXGn8S7aRlhcwpVkO8+4uoZVSOqUjdCsE+77oygfu2Tl+7qGHGIWsw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script>
+	$(document).ready(function(){
+		$('button').click(function(){
+			const name = $('#nameid').val();
+			alert(name);
+			$('#imgchange').attr('src',`https://joeschmoe.io/api/v1/${name}`);
+			const b=$('#imgchange');
+			console.log(b);
+		});
+	});
+</script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+body{
+	background-image: url(imgs/bg3.jpg);
+}
+.main{
+  
+  height: 700px;
+  background-image: url(imgs/bg2.jpg);
+  border: 5px;
+  border-radius: 15px;
+  margin-left: 200px;
+  margin-right:200px;
+  margin-top: 50px;
+  margin-bottom: 200px;
+  align-items: center;
+  justify-content: center;
+
+}
+.navbar{
+	font-family: 'Birthstone', cursive;
+	font-family: 'Ephesis', cursive;
+}
+
+input[type=text] {
+  border: 5px ;
+  border-radius: 4px;
+  transition: width 0.4s ease-in-out;
+}
+input[type=text]:focus {
+  width: 50%;
+  align-items: center;
+}
+
+
+h3{
+	
+	font-family: 'Varela Round', sans-serif;
+
+}
+
+.imgdiv{
+
+	margin-top: 50px;
+}
+
+button{
+	margin-top: 10px;
+}
